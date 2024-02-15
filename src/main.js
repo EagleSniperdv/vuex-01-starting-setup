@@ -8,6 +8,23 @@ const store = createStore({
         return {
             counter:0
         }
+    },
+
+    mutations: {
+        increment(state) {
+            setTimeout(() => {
+                state.counter++;
+            },2000);
+            
+        },
+
+        increase(state,payload) {
+            state.counter = state.counter + 2 + payload.value;
+        }
+    },
+
+    actions: {
+        
     }
 });
 

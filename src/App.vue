@@ -1,13 +1,17 @@
 <template>
-  <base-container title="Vuex"></base-container>
+  <base-container title="Vuex">
+    <change-counter></change-counter>
+  </base-container>
 </template>
 
 <script>
 import BaseContainer from './components/BaseContainer.vue';
+import ChangeCounter from './components/ChangeCounter.vue';
 
 export default {
   components: {
     BaseContainer,
+    ChangeCounter
   },
 };
 </script>

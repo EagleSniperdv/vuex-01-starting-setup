@@ -21,7 +21,7 @@ export default {
 
   methods: {
     addCounter() {
-      this.$store.state.counter++;
+      this.$store.commit('increment');
 
     },
 
